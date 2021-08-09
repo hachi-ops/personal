@@ -13,7 +13,7 @@ const About = () => {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit libero repellendus ab sit inventore vero eum tempore illum nisi, repellat numquam recusandae ipsa saepe, quis est suscipit, sequi facilis obcaecati.
           </p>
         </div>
-    )
-}
+    );
+};
 
 export default About;

@@ -11,7 +11,7 @@ import './App.css';
 function App() {
   return (
     <Router>
- <div className="app">
+  <div className="app">
    <NavBar />
    <Switch>
      <Route exact path="/" component={Home} />
@@ -21,8 +21,7 @@ function App() {
      <Route exact path="/contact" component={Contact} />
    </Switch>
    <Footer />
-   App
-    </div>
+  </div>
     </Router>
 
   );

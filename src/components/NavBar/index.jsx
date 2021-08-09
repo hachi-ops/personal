@@ -1,16 +1,23 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./style.css";
 
 const NavBar = () => {
     const [open, setOpen] = useState(false);
     const [screenWidth, setScreenWidth] = useState(0);
+    const location = useLocation();
 
     const trackScreenWidth = () => {
         const width = window.innerWidth;
         setScreenWidth(width);
         if (width > 800) {
-            setOpen(true)
+            setOpen(true);
+        }
+    };
+
+    const handleClose = () => {
+        if (screenWidth < 800){
+            setOpen(false);
         }
     };
 
@@ -53,16 +60,16 @@ const NavBar = () => {
                     <ul style={{ left: open ? "0" : "-100vw"}}>
                         <li>
                             <Link
+                            onClick={handleClose}
                              style={{ color: location.pathname === "/" && "#4071f4"}}
                             to="/"
-                            // onClick={handleClose}
-                            // style={{ color: location.pathname === "/" && "#4071f4"}}
                             >
                                 Home
                             </Link>
                         </li>
                         <li>
                             <Link
+                             onClick={handleClose}
                              style={{ color: location.pathname === "/about" && "#4071f4"}}
                             to="/about"
                             >
@@ -72,6 +79,7 @@ const NavBar = () => {
 
                         <li>
                             <Link
+                             onClick={handleClose}
                              style={{ color: location.pathname === "/skills" && "#4071f4"}}
                             to="/skills"
                             >
@@ -81,6 +89,7 @@ const NavBar = () => {
 
                         <li>
                             <Link
+                             onClick={handleClose}
                              style={{ color: location.pathname === "/works" && "#4071f4"}}
                             to="/works"
                             >
@@ -90,21 +99,18 @@ const NavBar = () => {
 
                         <li>
                             <Link
+                             onClick={handleClose}
                              style={{ color: location.pathname === "/contact" && "#4071f4"}}
                             to="/contact"
                             >
                                 Contact
                             </Link>
                         </li>
-
                     </ul>
-
                 </div>
-
             </div>
-
         </nav>
-    )
-}
+    );
+};
 
 export default NavBar;

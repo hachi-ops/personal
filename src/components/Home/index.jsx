@@ -20,10 +20,9 @@ const Home = () => {
                 src={`${process.env.PUBLIC_URL}/penguin-avatar.png`}
                 alt="logo"
                     />
-
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Home;

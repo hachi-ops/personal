@@ -18,8 +18,10 @@ const Works = () => {
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. In quasi dolore perspiciatis modi perferendis quibusdam, saepe debitis molestias suscipit facere explicabo neque deleniti dolorum assumenda quam dolor quaerat. Veritatis, explicabo?</p>
 
-        </div>
-    )
-}
+
+  </div>
+
+    );
+};
 
 export default Works;

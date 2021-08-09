@@ -1,4 +1,5 @@
 * {
+  outline: 1px solid red;;
   padding: 0;
   margin: 0;
 }
@@ -22,21 +23,19 @@ body {
   scrollbar-width: none; /* Firefox */
 }
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, 'Courier New',
     monospace;
 }
 
 .container {
   margin : 0 auto;
-  padding: 0 15 px;
+  padding: 0 15px;
   max-width: 1280px;
 }
 
-p {
+h1, h2, p {
   line-height: 30px;
-  font-family: 'Source Code Pro', Menlo, Monaco, Consolas, "Courier New"
+  font-family: 'Source Code Pro', "Courier New"
 }
 
-h1, h2 {
-  font-family: "Righteous", cursive;
-}
+
